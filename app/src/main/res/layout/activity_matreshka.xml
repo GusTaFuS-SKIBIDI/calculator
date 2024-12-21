@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D3D3D3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#696969">
+
+            <!-- Контейнер для иконки и текста -->
+            <LinearLayout
+                android:id="@+id/center_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Иконка перед текстом -->
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/shest" />
+
+                <!-- Название приложения -->
+                <TextView
+                    android:id="@+id/header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="UpMemory"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/description_text"
+            android:layout_width="380dp"
+            android:layout_height="350dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="64dp"
+            android:fontFamily="sans-serif"
+            android:text="Метод Матрёшка помогает запоминать информацию через вложение элементов друг в друга. Сначала выделяется основная тема, затем она разбивается на подкатегории, а внутри добавляются конкретные детали. Информация запоминается слоями: от общего к частному. Для запоминания полезно визуализировать структуру как вложенные объекты и связывать их ассоциациями."
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Приступить"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/holo_blue_light"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="#696969" />
+        <Button
+            android:id="@+id/back_button"
+
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:text="Назад"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
